@@ -17,5 +17,11 @@ class Refri(Producto):
     volumen = models.CharField(max_length=50)
     marca = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.nombre+' - '+ self.min_temperatura+' - '+ self.marca
 class Laptop(Producto):
     modelo_cpu = models.CharField(max_length=50)
+
+    #funcion para mostrar los datos de la clase
+    def __str__(self):
+        return self.nombre+' - '+ self.peso
