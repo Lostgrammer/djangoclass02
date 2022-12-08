@@ -4,7 +4,7 @@ from django.db import models
 #creando un abstract
 class Producto(models.Model):
     nombre = models.CharField(max_length=50)
-    precio = models.IntegerField
+    precio = models.IntegerField()
     peso = models.CharField(max_length=50)
 
     class Meta:
@@ -17,5 +17,5 @@ class Refri(Producto):
     volumen = models.CharField(max_length=50)
     marca = models.CharField(max_length=50)
 
-class laptop(Producto):
+class Laptop(Producto):
     modelo_cpu = models.CharField(max_length=50)

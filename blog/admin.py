@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+# Registrar modelos creados aca
+from .models import Laptop,Refri
+
+admin.site.register(Refri)
+admin.site.register(Laptop)
